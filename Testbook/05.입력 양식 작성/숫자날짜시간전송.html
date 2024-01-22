@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>다양한 입력 양식</title>
+        <!--교재 p.138-->
+    </head>
+    <body>
+        <!--숫자 입력 필드 type="number", type="range"-->
+        <ul>
+            <li>
+                <label><input type="checkbox" value="s_3">선물용 3kg</label>
+                <input type="number" min="0" max="5">개 (최대 5개)
+            </li>
+            <li>
+                <label><input type="checkbox" value="s_5">선물용 5kg</label>
+                <input type="number" min="0" max="3" value="1">개 (최대 3개)
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label><input type="checkbox" value="f_3">가정용 3kg</label>
+                <input type="range" min="0" max="5">개 (최대 5개)
+            </li>
+            <li>
+                <label><input type="checkbox" value="f_5">가정용 5kg</label>
+                <input type="range" min="0" max="3" value="1">개 (최대 3개)
+            </li>
+        </ul>
+
+        <!--날짜 입력 필드 type="date | month | week"--><p></p>
+        <h1>날짜 지정하기</h1>
+        <input type="date">
+        <input type="month">
+        <input type="week">
+
+        <!--시간 입력 필드 type="time | datatime | datatime-local"--><p></p>
+        <h1>시간 지정하기</h1>
+        <input type="time">
+        <input type="datetime-local">
+        <input type="date" min="2020-02-01" max="2020-02-15">
+
+        <!--전송,리셋 버튼 필드 type="submit | reset" value="버튼 표시 내용"--><p></p>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+
+        <!--이미지 버튼 type="image" src="이미지 경로" alt="대체 텍스트"--><p></p>
+        <label>아이디 : <input type="text" id="user-id" size="10"></label>
+        <label>비밀번호 : <input type="password" id="user-pw" size="10"></label>
+        <input type="image" src="../../Ch02/images/ball.png" alt="로그인" width="25px">
+
+        <!--버튼 필드 type="button"--><p></p>
+        <form>
+            <input type="button" value="공지 창 열기" onclick="window.open('notice.html')">
+        </form>
+
+        <!--파일을 첨부하는 type="file"--><p></p>
+        <input type="file">
+        
+
+        <!--히든 필드 type="hidden"--><p></p>
+        <input type="hidden" value="사이트를 통한 직접 로그인">
+        <label>아이디 : <input type="text" id="user-id" size="10"></label>
+        <label>비밀번호 : <input type="password" id="user-pw" size="10"></label>
+        <input type="submit" value="로그인">
+    </body>
+</html>
