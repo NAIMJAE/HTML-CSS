@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input태그 주요 속성</title>
+    <!--교재 p.148-->
+</head>
+<body>
+    <!-- 
+        readonly : 읽기 전용 (사용자가 수정 불가능)
+        required : submit하기 위한 필수 항목(미기입 불가능)
+        autofocus : 페이지에 접근했을때 커서 위치
+        placeholder : 힌트 내용 표시
+    -->
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul id="shipping">
+                <li>
+                    <label for="prod">주문 상품</label>
+                    <input type="text" id="prod" value="상품용 3kg" readonly>
+                </li>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" autofocus required>
+                </li>
+                <li>
+                    <label for="addr">배송 주소</label>
+                    <input type="text" id="addr" required>
+                </li>
+                <li>
+                    <label for="mail">이메일</label>
+                    <input type="email" id="mail">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" placeholder="하이픈 뺴고 입력" required>
+                </li>
+                <li>
+                    <label for="d-day">배송 지정</label>
+                    <input type="date" id="d-day"> <small>(주문일로부터 최소 3일 이후)</small>
+                </li>
+            </ul>
+        </fieldset>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+    <form>
+        <fieldset>
+            <legend>회원 가입</legend>
+            <ul>
+                <li>
+                    <label for="uid">아이디</label>
+                    <input type="text" id="uid" autofocus placeholder="4자 ~ 10자 사이" required>
+                </li>
+                <li>
+                    <label for="mail">이메일</label>
+                    <input type="email" id="mail" required>
+                </li>
+                <li>
+                    <label for="pwd1">비밀번호</label>
+                    <input type="password" id="pwd1" placeholder="문자,숫자, 특수기호 포함" required>
+                </li>
+                <li>
+                    <label for="pwd2">비밀번호 확인</label>
+                    <input type="password" id="pwd2" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <input type="radio" name="mailing" id="mailing_y" value="mailing_yes">
+            <label for="mailing_y">메일 수신</label>
+            <input type="radio" name="mailing" id="mailing_n" value="mailing_no" checked>
+            <label for="mailing_n">메일 수신 안 함</label>
+        </fieldset>
+    </form>
+</body>
+</html>
