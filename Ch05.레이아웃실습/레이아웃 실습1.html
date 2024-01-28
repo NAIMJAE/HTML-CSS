@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 실습 1</title>
+    <!--
+        날짜 : 2024/01/28
+        이름 : 박임재
+        내용 : 레이아웃 실습 1
+    -->
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul, ol {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #111;
+        }
+
+        #container {
+            border: 1px solid black;
+            background-color: #fff;
+            width: 800px;
+            height: auto;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        #header {
+            border: 1px dashed black;
+            background-color: #eee;
+            width: 100%;
+            height: 120px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        #main {
+            border: 1px dashed black;
+            background-color: #ddd;
+            width: 100%;
+            height: 400px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        #footer {
+            border: 1px dashed black;
+            background-color: #ccc;
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">HEADER</header>
+        
+        <main id="main">MAIN</main>
+
+        <footer id="footer">FOOTER</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 실습 8</title>
+    <!--
+        날짜 : 2024/01/28
+        이름 : 박임재
+        내용 : 레이아웃 실습 8
+    -->
+    <style>
+        /*초기화*/
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        ul, ol {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #111;
+        }
+
+        #container {
+            box-sizing: border-box;
+            width: 860px;
+            height: auto;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: #eee;
+        }
+
+        header {
+            box-sizing: border-box;
+            width: 100%;
+            height: 120px;
+            border: 1px dashed black;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #ddd;
+            position: relative;
+        }
+        header > nav {
+            box-sizing: border-box;
+            width: auto;
+            height: 50px;
+            border: 1px dashed black;
+            padding: 10px;
+            background-color: #fff;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        main {
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            border: 1px dashed black;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #eee;
+            overflow: hidden;
+        }
+        main > nav {
+            box-sizing: border-box;
+            width: 100%;
+            height: 50px;
+            border: 1px dashed black;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+        main > .flexbox {
+            display: flex;
+            margin-top: 10px;
+        }
+        main > .flexbox > aside {
+            width: 198px;
+            height: 400px;
+            background-color: #ddd;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        main > .flexbox > section {
+            width: 400px;
+            height: 400px;
+            background-color: #ddd;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 0 10px 0 10px;
+        }
+        section > article {
+            width: 100%;
+            height: 168px;
+            background-color: #eee;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100px;
+            border: 1px dashed black;
+            padding: 10px;
+            background-color: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            HEADER
+            <nav>NAV</nav>
+        </header>
+        <main>
+            MAIN
+            <nav>NAV</nav>
+            <div class="flexbox">
+                <aside>ASIDE #1</aside>
+                <section>
+                    SECTION
+                    <article>ARTICLE #1</article>
+                    <article>ARTICLE #2</article>
+                </section>
+                <aside>ASIDE #2</aside>
+            </div>
+        </main>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>
