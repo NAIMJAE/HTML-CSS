@@ -237,8 +237,91 @@ main > section {
     width: 364px;
 }
 
+/*hello*/
+.gb {
+    position: relative;
+    background-image: url(../image/sub_top_bg.jpg);
+}
+.gb > img {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
 
+.cate1 > aside > ul > li:nth-child(1) > a {
+    background-image: url(../image/sub_cate1_lnb1_ov.png);
+}
+.cate1 > aside > ul > li:nth-child(2) > a {
+    background-image: url(../image/sub_cate1_lnb2.png);
+}
+.cate1 > aside > ul > li:nth-child(2) > a:hover {
+    background-image: url(../image/sub_cate1_lnb2_ov.png);
+}
+.content > nav > img {
+    position: absolute;
+    bottom: 4px;
+}
+.content > nav > p {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    color: #8c8c8c;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-image: url("../image/sub_page_nav_ico.gif");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+.content > nav > p > em {
+    font-weight: bold;
+    color: #91BA15;
+}
+.content > p {
+    line-height: 20px;
+    color: #666;
+    margin-top: 10px;
+}
+.content > p > span {
+    color: #91BA15;
+    font-weight: bold;
+}
 
+/*introduction*/
+section > aside {
+    background-image: url(../image/sub_aside_bg_line.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+section > aside > img {
+    margin: 16px;
+}
+section > aside > ul {
+    width: 175px;
+    height: 233px;
+    background-image: url(../image/sub_aside_bg_lnb.png);
+    padding-top: 26px;
+    box-sizing: border-box;
+}
+section > aside > ul > li {
+    width: 100%;
+    height: 29px;
+    margin-bottom: 6px;
+}
+section > aside > ul a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+.cate2 > aside > ul > li:nth-child(2) > a {
+    background-image: url(../image/sub_cate1_lnb2_ov.png);
+}
+.cate2 > aside > ul > li:nth-child(1) > a {
+    background-image: url(../image/sub_cate1_lnb1.png);
+}
+.cate2 > aside > ul > li:nth-child(1) > a:hover {
+    background-image: url(../image/sub_cate1_lnb1_ov.png);
+}
 
 
 
